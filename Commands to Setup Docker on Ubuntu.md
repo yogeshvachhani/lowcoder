@@ -1,5 +1,5 @@
 ### Install Docker
-sudo apt update
+`sudo apt update`
 
 
 ### Install prerequisite packages
