@@ -1,20 +1,20 @@
 ### Install Docker
-`sudo apt update`
+```sudo apt update```
 
 
 ### Install prerequisite packages
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
+```sudo apt install apt-transport-https ca-certificates curl software-properties-common```
 
 
 ### Add the GPG key for the official Docker repository to system
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -```
 
 
 ### Add the Docker repository to APT sources
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+```sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"```
 
 ### To install from the Docker repo
-apt-cache policy docker-ce
+```apt-cache policy docker-ce```
 
 
 You’ll see output like this, although the version number for Docker may be different:
@@ -28,8 +28,8 @@ You’ll see output like this, although the version number for Docker may be dif
 				
 
 ### Install Docker
-sudo systemctl status docker
+```sudo systemctl status docker```
 
 
 ### Test Docker it setup properly and working
-docker run hello-world
+```docker run hello-world```
