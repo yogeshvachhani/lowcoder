@@ -35,8 +35,6 @@ services:
       - 5432:5432
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
-    env_file:
-    - .env
   ##
   ## PostgreSQL Administrator tool
   ##
@@ -96,10 +94,10 @@ services:
       LOWCODER_ADMIN_SMTP_PORT: 587
       LOWCODER_ADMIN_SMTP_USERNAME:
       LOWCODER_ADMIN_SMTP_PASSWORD:
-      LOWCODER_ADMIN_SMTP_AUTH: true
-      LOWCODER_ADMIN_SMTP_SSL_ENABLED: false
-      LOWCODER_ADMIN_SMTP_STARTTLS_ENABLED: true
-      LOWCODER_ADMIN_SMTP_STARTTLS_REQUIRED: true
+      LOWCODER_ADMIN_SMTP_AUTH: "true"
+      LOWCODER_ADMIN_SMTP_SSL_ENABLED: "false"
+      LOWCODER_ADMIN_SMTP_STARTTLS_ENABLED: "true"
+      LOWCODER_ADMIN_SMTP_STARTTLS_REQUIRED: "true"
       # Email used as sender in lost password email
       LOWCODER_EMAIL_NOTIFICATIONS_SENDER: info@localhost
     restart: unless-stopped
