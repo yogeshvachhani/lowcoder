@@ -48,6 +48,7 @@ sudo apt install docker-ce
 sudo systemctl status docker
 ```
 Output should be something like this
+
 `
 ● docker.service - Docker Application Container Engine
      Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
