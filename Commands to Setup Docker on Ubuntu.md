@@ -40,6 +40,11 @@ docker-ce:
 
 ### Install Docker
 ```
+sudo apt install docker-ce
+```
+
+### Check Docker Status
+```
 sudo systemctl status docker
 ```
 
