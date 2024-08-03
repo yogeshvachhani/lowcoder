@@ -68,3 +68,8 @@ TriggeredBy: ● docker.socket
 ```
 docker run hello-world
 ```
+
+### Install Docker Compose (if required)
+```
+apt install docker-compose
+```
